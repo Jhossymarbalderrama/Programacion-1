@@ -27,7 +27,8 @@ int main()
         printf("b- Resta\n");
         printf("c- Multiplicacion\n");
         printf("d- Division\n");
-        printf("e- Salir\n\n");
+        printf("e- Factorial\n");
+        printf("f- Salir\n\n");
         printf("Ingrese Opciones: ");
         opcion = getche();
 
@@ -72,6 +73,7 @@ int main()
         case 'c':
             printf("\nUsted eligio Multiplicar\n");
                 //Linea de Codigo segun la Opcion
+
                         int multip1;
                         int multip2;
                         int multiplicacion;
@@ -93,6 +95,11 @@ int main()
             system("pause");
             break;
         case 'e':
+        printf("\nUsted eligio Factorial\n");
+        //Linea de Codigo segun la Opcion
+        system("pause");
+        break;
+        case 'f':
             printf("\nUsted eligio Salir\n");
             printf("Confirma salida?\n");
             seguir = getche();
