@@ -77,7 +77,7 @@ int main()
 
 
 /* tps 1 menu de opciones
-    #include<>
+    #include <stdlib.h>
 
     char opcion;
     char seguir='n';
