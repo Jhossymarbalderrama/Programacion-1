@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1567550959 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"FuntionSuma.h"
+	"FuntionResta.h"
+	"FuntionMultiplicacion.h"
+	"FuntionDivision.h"
+	"FuntionFactorial.h"
+
+1567464020 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionsuma.c
+
+1567463985 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionsuma.h
+
+1567467647 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionfactorial.c
+
+1567465709 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionmultiplicacion.c
+
+1567464311 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionresta.c
+
+1567546933 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtiondivision.c
+
+1567464321 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionresta.h
+
+1567465714 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionmultiplicacion.h
+
+1567465548 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtiondivision.h
+
+1567467660 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico v2.0\funtionfactorial.h
+

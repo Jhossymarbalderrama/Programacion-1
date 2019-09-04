@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdlib.h>
 /*
 Escribir un programa que realice las siguientes accciones:
     *Limpie la Pantalla

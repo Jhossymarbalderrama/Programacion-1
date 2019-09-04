@@ -1,0 +1,1 @@
+int funtionMultiplicacion(int , int);

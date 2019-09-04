@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1567545052 source:c:\users\balde\desktop\lectura de archivos\main.c
+	<stdio.h>
+	<stdlib.h>
+
