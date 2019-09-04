@@ -111,7 +111,7 @@ int main()
 
             factorial = funtionFactorial(numF1);
 
-            printf("\nEl factorial de %d es %d .\n",numF1 , factorial);
+            printf("\nEl factorial de %d es %lli .\n",numF1 , factorial);
 
             system("pause");
             break;

@@ -14,7 +14,7 @@
 int main()
 {
 //rb modo textual solo r pero para ser mas rapido lo pongo como rb "b" Binario
-    FILE * flujo = fopen("Prueba.txt", "rb"); //https://osu.ppy.sh/beatmapsets/
+    FILE * flujo = fopen("MapasOsu.txt", "rb"); //https://osu.ppy.sh/beatmapsets/
 
     if(flujo == NULL){
         perror("Error en la apertura del Archivo");
