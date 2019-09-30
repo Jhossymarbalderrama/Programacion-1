@@ -1,0 +1,49 @@
+void ordenarAlumnosSexLeg( int leg[], int age[], char sex[], int n1[], int n2[], float prom[], int tam){
+
+    int auxInt;
+    float auxFloat;
+    char auxChar;
+    int swap = 0;
+
+    for(int i=0; i < tam-1; i++){
+        for(int j = i +1; j < tam; j++){
+
+            if( sex[i] > sex[j]){
+                    swap = 1;
+            }
+            else if( sex[i] == sex[j] && leg[i] > leg[j]){
+
+                    swap = 1;
+            }
+
+            if( swap ){
+
+                auxInt = leg[i];
+                leg[i] = leg[j];
+                leg[j] = auxInt;
+
+                auxInt = age[i];
+                age[i] = age[j];
+                age[j] = auxInt;
+
+                auxChar = sex[i];
+                 sex[i] = sex[j];
+                 sex[j] = auxChar;
+
+                auxInt = n1[i];
+                 n1[i] = n1[j];
+                 n1[j] = auxInt;
+
+                auxInt = n2[i];
+                 n2[i] = n2[j];
+                 n2[j] = auxInt;
+
+              auxFloat = prom[i];
+               prom[i] = prom[j];
+               prom[j] = auxFloat;
+            }
+
+            swap = 0;
+        }
+    }
+}

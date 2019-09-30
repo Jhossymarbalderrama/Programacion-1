@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1569689703 source:c:\users\balde\desktop\trabajo practico 2 v2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"employeeLibrary.h"
+
+1569689561 source:c:\users\balde\desktop\trabajo practico 2 v2\employeelibrary.c
+	"employeeLibrary.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1569689491 c:\users\balde\desktop\trabajo practico 2 v2\employeelibrary.h
+

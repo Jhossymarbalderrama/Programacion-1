@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1568042549 source:c:\users\alumno\desktop\paralelos\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1568637275 source:c:\users\alumno\desktop\clase 6 zips ticher\paralelos\paralelos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
