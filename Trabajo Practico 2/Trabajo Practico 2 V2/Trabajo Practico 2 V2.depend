@@ -13,3 +13,17 @@
 
 1569689491 c:\users\balde\desktop\trabajo practico 2 v2\employeelibrary.h
 
+1569966694 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2 v2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"employeeLibrary.h"
+
+1569689980 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.h
+
+1569968919 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.c
+	"employeeLibrary.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+

@@ -33,7 +33,7 @@ int hardcodeoEmpleados(eEmpleados empleados[], int tam, int cantidad)
         { 5, "Gaston","Hernandez",25000,2},
         { 6, "Amalia", "Lopez",25000,1},
         { 7, "Sofia", "Escudo",25000,1},
-        { 8, "Diego", "Falopa",25000,5},
+        { 8, "Diego", "Blanco",25000,5},
         { 9, "Fernando","Fernandez",25000,4},
         { 10, "Clara","Letra",25000,5}
     };
@@ -282,15 +282,18 @@ void mostrarEmpleados(eEmpleados empleado[], int tam)
 
 void odenarEmpleados(eEmpleados empleado[], int tam){
     eEmpleados auxEmpleado;
-    for(int i ; i < tam-1 ; i++){
+
+    system("cls");
+    for(int i = 0; i < tam-1 ; i++){
         for(int j = i+1 ;j < tam ; j++){
-            if(empleado[i].lastName < empleado[j].lastName){
+            if(empleado[i].lastName < empleado[j].lastName && empleado[i].isEmpty == 0  /*empleado[i].sector > empleado[j].sector*/ ){
                 auxEmpleado = empleado[i];
                 empleado[i] = empleado[j];
                 empleado[j] = auxEmpleado;
             }
         }
     }
+    mostrarEmpleados(empleado,tam);
 }
 
 /**< Luego Eliminar Modificacion para TP2 */

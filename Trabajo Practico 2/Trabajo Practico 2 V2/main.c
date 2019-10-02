@@ -32,9 +32,7 @@ int main()
             modificarEmpleado(lista,TAM);
             break;
         case 4:
-            mostrarEmpleados(lista,TAM);
             odenarEmpleados(lista,TAM);
-            mostrarEmpleados(lista,TAM);
             break;
         case 5:
             mostrarEmpleados(lista,TAM);
