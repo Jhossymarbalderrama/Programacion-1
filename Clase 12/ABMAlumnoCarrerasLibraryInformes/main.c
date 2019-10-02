@@ -25,6 +25,13 @@ void mejoresPromediosXCarrera(eAlumno alumnos[], int tam, eCarrera carreras[], i
 void carreraMasCursada(eAlumno alumnos[], int tam, eCarrera carreras[], int tamC);
 void mostrarComidasFechaDeterminada(eAlmuerzo almuerzo[], int tamAl,eComidas comidas[], int tComidas);
 
+
+void mostrarCantAlmuerzosXCarrera(eCarrera carreras[],int tamCarr,eAlumno alumnos[],int tamAlumno,eAlmuerzo almuerzo[],int tamAlmuerzo);
+void mostrarCarreraAmanteDeMilanesas(eCarrera carreras[],int tamCarr,eAlumno alumnos[],int tamAlumno,eAlmuerzo almuerzo[],int tamAlmuerzo,eComidas comidas[],int tamComida);
+
+
+void totalDeudaXAlumno(eAlumno alumnos[],int tamAlumno,eAlmuerzo almuerzo[],int tamAlmuerzo,eComidas comidas[],int tamCom);
+
 int main()
 {
     int legajo = 20000;
@@ -114,7 +121,7 @@ int menu()
     int opcion;
 
     system("cls");
-    printf("****** ABM Alumnos *******\n\n");
+    printf("------ ABM Alumnos ------\n\n");
     printf("1-Alta alumno\n");
     printf("2-Baja alumno\n");
     printf("3-Modificar alumno\n");
@@ -151,6 +158,7 @@ int menuInformes()
     printf("11-Listar cantidad de almuerzos por carrera\n");
     printf("12-Carrera amante de las milanesas\n");
     printf("13-Informe deuda alumno seleccionado\n");
+    printf("14-Recaudacion Comida\n");
     printf("20-Salir\n\n");
     printf("Ingrese opcion: ");
     scanf("%d", &opcion);
@@ -208,6 +216,12 @@ void InformesAlumnos(eAlumno alumnos[], int tam, eCarrera carreras[], int tamC, 
             printf("Informe 10\n");
             break;
 
+        case 11:
+            mostrarCantAlmuerzosXCarrera(carreras,tamC,alumnos,tam,almuerzo,tAlmuerzos);
+            break;
+        case 12:
+            mostrarCarreraAmanteDeMilanesas(carreras,tamC,alumnos,tam,almuerzo,tAlmuerzos,comidas,tComidas);
+            break;
         case 20:
             printf("Confirma salir?:");
             fflush(stdin);
@@ -392,4 +406,75 @@ void mostrarComidasFechaDeterminada(eAlmuerzo almuerzo[], int tamAl,eComidas com
             printf("No hay comidas para mostrar en esa fecha\n");
         }
     }
+}
+
+void mostrarCantAlmuerzosXCarrera(eCarrera carreras[],int tamCarr,eAlumno alumnos[],int tamAlumno,eAlmuerzo almuerzo[],int tamAlmuerzo){
+    int cant = 0;
+
+    for(int i = 0 ; i < tamCarr ; i++){
+        for(int j = 0; j < tamAlumno ; j++){
+                if(alumnos[j].isEmpty == 0 && alumnos[j].idCarrera ==  carreras[i].id){
+                    for(int k = 0 ; k < tamAlmuerzo ; k++){
+                            if( almuerzo[k].isEmpty == 0 && almuerzo[k].legajo == alumnos[j].legajo){
+                            cant++;
+                            }
+                    }
+                }
+        }
+        printf("Carrera %s con: %d ",carreras[i].descripcion, cant);
+        printf("\n");
+        cant = 0;
+    }
+}
+
+
+void mostrarCarreraAmanteDeMilanesas(eCarrera carreras[],int tamCarr,eAlumno alumnos[],int tamAlumno,eAlmuerzo almuerzo[],int tamAlmuerzo,eComidas comidas[],int tamComida){
+    int cant = 0;
+
+    for(int i = 0 ; i < tamCarr ; i++){
+        for(int j = 0; j < tamAlumno ; j++){
+                if(alumnos[j].isEmpty == 0 && alumnos[j].idCarrera ==  carreras[i].id){
+                    for(int k = 0 ; k < tamAlmuerzo ; k++){
+                            if( almuerzo[k].isEmpty == 0 && almuerzo[k].legajo == alumnos[j].legajo){
+                                for(int h = 0; h < tamComida ; h++){
+                                        if(comidas[h].id == 5004){
+                                            cant++;
+                                        }
+                                }
+                            }
+                    }
+                }
+        }
+
+
+
+        printf("Carrera %s con Milanesas: %d ",carreras[i].descripcion, cant);
+        printf("\n");
+        cant = 0;
+    }
+}
+
+
+void totalDeudaXAlumno(eAlumno alumnos[],int tamAlumno,eAlmuerzo almuerzo[],int tamAlmuerzo,eComidas comidas[],int tamCom){
+/**< Por cada alumno sumo la cantidad  de precio por comida que comio*/
+int cont  = 0;
+
+    for(int i = 0 ; i < tamAlumno ; i++){
+        if(alumnos[i].isEmpty == 0){
+            for(int j = 0 ; j < tamAlmuerzo ; j++){
+                if(almuerzo[j].isEmpty == 0  && alumnos[i].legajo == almuerzo[j].legajo){
+                    for(int k = 0 ; k < tamCom ; k++){
+                        if(almuerzo[j].idComida == comidas[k].id){
+                            cont++;
+                        }
+                    }
+                }
+            }
+        }
+        printf("Alumno :%s  Deudo: %d ",alumnos[i].nombre,cont);
+        printf("\n");
+        cont = 0;
+    }
+
+
 }

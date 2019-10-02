@@ -114,3 +114,52 @@
 	<string.h>
 	"almuerzo.h"
 
+1570016303 source:c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\almuerzo.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"almuerzo.h"
+
+1570016303 c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\almuerzo.h
+	"alumno.h"
+	"comida.h"
+
+1570016303 c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\alumno.h
+	"carrera.h"
+
+1570016303 c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\carrera.h
+
+1570016303 c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\comida.h
+
+1570016303 source:c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\alumno.c
+	"alumno.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1570016303 source:c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\carrera.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"carrera.h"
+
+1570016303 source:c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\comida.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"comida.h"
+
+1570022388 source:c:\users\alumno\desktop\programacion-1\clase 12\abmalumnocarreraslibraryinformes\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"carrera.h"
+	"alumno.h"
+	"comida.h"
+	"almuerzo.h"
+
