@@ -27,3 +27,17 @@
 	<conio.h>
 	<string.h>
 
+1570016304 source:c:\users\alumno\desktop\programacion-1\trabajo practico 2\trabajo practico 2 v2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"employeeLibrary.h"
+
+1570016304 c:\users\alumno\desktop\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.h
+
+1570028322 source:c:\users\alumno\desktop\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.c
+	"employeeLibrary.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+

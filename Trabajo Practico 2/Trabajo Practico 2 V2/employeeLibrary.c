@@ -286,11 +286,11 @@ void odenarEmpleados(eEmpleados empleado[], int tam){
     system("cls");
     for(int i = 0; i < tam-1 ; i++){
         for(int j = i+1 ;j < tam ; j++){
-            if(empleado[i].lastName < empleado[j].lastName && empleado[i].isEmpty == 0  /*empleado[i].sector > empleado[j].sector*/ ){
+               if(empleado[i].isEmpty == 0 && strcmp(empleado[i].lastName,empleado[j].lastName)== 1){
                 auxEmpleado = empleado[i];
                 empleado[i] = empleado[j];
                 empleado[j] = auxEmpleado;
-            }
+           }
         }
     }
     mostrarEmpleados(empleado,tam);
