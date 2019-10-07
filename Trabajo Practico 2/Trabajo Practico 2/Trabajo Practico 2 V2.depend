@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1569689703 source:c:\users\balde\desktop\trabajo practico 2 v2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"employeeLibrary.h"
+
+1569689561 source:c:\users\balde\desktop\trabajo practico 2 v2\employeelibrary.c
+	"employeeLibrary.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1569689491 c:\users\balde\desktop\trabajo practico 2 v2\employeelibrary.h
+
+1570221877 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2 v2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"employeeLibrary.h"
+
+1570220332 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.h
+
+1570221058 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.c
+	"employeeLibrary.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1570016304 source:c:\users\alumno\desktop\programacion-1\trabajo practico 2\trabajo practico 2 v2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"employeeLibrary.h"
+
+1570016304 c:\users\alumno\desktop\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.h
+
+1570028322 source:c:\users\alumno\desktop\programacion-1\trabajo practico 2\trabajo practico 2 v2\employeelibrary.c
+	"employeeLibrary.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1570221058 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2\employeelibrary.c
+	"employeeLibrary.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1570222154 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2\employeelibrary.h
+
+1570222054 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\trabajo practico 2\trabajo practico 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"employeeLibrary.h"
+
