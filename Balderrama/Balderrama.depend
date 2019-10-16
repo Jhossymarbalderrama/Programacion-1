@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1571182350 source:c:\users\balde\desktop\balderrama\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"fecha.h"
+	"autos.h"
+	"color.h"
+	"marca.h"
+	"servicios.h"
+	"trabajo.h"
+	"menu.h"
+
+1571182438 source:c:\users\balde\desktop\balderrama\autos.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"autos.h"
+
+1570894866 c:\users\balde\desktop\balderrama\autos.h
+	"marca.h"
+	"color.h"
+
+1570894152 c:\users\balde\desktop\balderrama\marca.h
+
+1570893996 c:\users\balde\desktop\balderrama\color.h
+
+1570894851 source:c:\users\balde\desktop\balderrama\color.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"color.h"
+
+1570894925 c:\users\balde\desktop\balderrama\fecha.h
+
+1570894282 c:\users\balde\desktop\balderrama\servicios.h
+
+1570895023 c:\users\balde\desktop\balderrama\trabajo.h
+	"fecha.h"
+	"servicios.h"
+	"autos.h"
+
+1571173089 source:c:\users\balde\desktop\balderrama\marca.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"marca.h"
+
+1570894968 source:c:\users\balde\desktop\balderrama\servicios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"servicios.h"
+
+1570894980 source:c:\users\balde\desktop\balderrama\trabajo.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"trabajo.h"
+
+1570895726 c:\users\balde\desktop\balderrama\menu.h
+
+1571174436 source:c:\users\balde\desktop\balderrama\menu.c
+	<stdio.h>
+	<stdlib.h>
+
