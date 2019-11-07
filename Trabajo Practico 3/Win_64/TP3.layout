@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="Employee.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1015" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="parser.c" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="299" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Controller.c" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9164" topLine="146" />
+		</Cursor>
+		<Folding>
+			<Collapse line="16" />
+			<Collapse line="69" />
+			<Collapse line="195" />
+			<Collapse line="396" />
+			<Collapse line="426" />
+			<Collapse line="451" />
+			<Collapse line="516" />
+			<Collapse line="555" />
+		</Folding>
+	</File>
+	<File name="Controller.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="664" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Employee.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6462" topLine="3" />
+		</Cursor>
+		<Folding>
+			<Collapse line="14" />
+			<Collapse line="32" />
+			<Collapse line="50" />
+			<Collapse line="85" />
+			<Collapse line="101" />
+			<Collapse line="116" />
+			<Collapse line="132" />
+			<Collapse line="147" />
+			<Collapse line="164" />
+			<Collapse line="180" />
+			<Collapse line="196" />
+			<Collapse line="214" />
+			<Collapse line="243" />
+			<Collapse line="266" />
+			<Collapse line="295" />
+		</Folding>
+	</File>
+	<File name="LinkedList.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1865" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1792" topLine="6" />
+		</Cursor>
+		<Folding>
+			<Collapse line="179" />
+		</Folding>
+	</File>
+	<File name="parser.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="154" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

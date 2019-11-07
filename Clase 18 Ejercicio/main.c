@@ -24,7 +24,7 @@ int loadDataFile(char* fileName,struct S_Data* array, int arrayLen){
     //Leemos el Archivo
     int index = 0;
     while(fgets(lineStr,128,fp)!= NULL){
-        int indexDivider = strcspn(lineStr,",");
+        int indexDivider = strcspn(lineStr,"=");
 
         int keyLen = indexDivider+1;
         int valueLen = strlen(lineStr) - indexDivider -1;

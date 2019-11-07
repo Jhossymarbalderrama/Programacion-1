@@ -47,6 +47,8 @@ int main()
         exit(1);
     }
 
+
+
     /**< Encabezado */
     fscanf(f, "%[^,],%[^,],%[^\n]\n", buffer[0], buffer[1], buffer[2] );/**< lee todo hasta una coma(,)y al final hasta el \ n .*/
     /**< [] rango, & ^ leer todo hasta la coma (,)y la segunda coma la salta en el fscanf*/
