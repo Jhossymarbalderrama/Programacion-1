@@ -231,6 +231,19 @@ void* ll_get(LinkedList* this, int index)
  */
 int ll_set(LinkedList* this, int index,void* pElement)
 {
+
+    int returnAux = -1;
+    Node* aux = NULL;
+
+    if(this!= NULL && index >= 0 && index < ll_len(this))
+    {
+        aux = getNode(this,index);
+        aux->pElement = pElement;
+        returnAux = 0;
+    }
+
+    return returnAux;
+    /*
     int returnAux = -1;
 
     if(this != NULL && index >= 0 && index < ll_len(this))
@@ -242,6 +255,7 @@ int ll_set(LinkedList* this, int index,void* pElement)
     }
 
     return returnAux;
+    */
 }
 
 
@@ -513,29 +527,57 @@ int ll_contains(LinkedList* this, void* pElement)
 int ll_containsAll(LinkedList* this,LinkedList* this2)
 {
     int returnAux = -1;
-    int flag = 0;
-
-
-    if(this != NULL && this2 != NULL){
-        for(int i = 0;i<=ll_len(this2);i++){
-            if(ll_contains(this,ll_get(this,i))){
-                    flag = 1;
-            }else{
-                flag = 0;
+    Node* pAuxNode;
+    if(this != NULL && this2 != NULL)
+    {
+        pAuxNode = this2->pFirstNode;
+        returnAux = 1;
+        for(int i=0;i<ll_len(this2);i++)
+        {
+            if(!ll_contains(this,pAuxNode->pElement))
+            {
+                returnAux = 0;
+                break;
             }
-        }
-
-        if(flag == 1){
-            returnAux = 1;
-            printf("esta");
-        }else{
-            returnAux = 0;
-            printf("no esta");
+            pAuxNode = pAuxNode->pNextNode;
         }
     }
 
     return returnAux;
+
+/**<
+    int returnAux = -1;
+
+
+    if(this != NULL && this2 != NULL)
+    {
+        int flag = 0;
+        for(int i = 0; i<= ll_len(this); i++)
+        {
+            int esta ;
+            esta = ll_contains(this2,ll_get(this,i));
+
+            if( esta== 0)
+            {
+                return 0;
+            }
+            else
+            {
+                flag = 1;
+            }
+        }
+        if(flag == 1)
+        {
+
+            returnAux = 1;
+
+        }
+
+    }
+    return returnAux;
+ */
 }
+
 
 /** \brief Crea y retorna una nueva lista con los elementos indicados
  *
@@ -550,6 +592,15 @@ int ll_containsAll(LinkedList* this,LinkedList* this2)
 LinkedList* ll_subList(LinkedList* this,int from,int to)
 {
     LinkedList* cloneArray = NULL;
+
+    if(this != NULL && from >= 0 && from < ll_len(this) && to>from && to <= ll_len(this))
+    {
+        cloneArray = ll_newLinkedList();
+        for(; from<to; from++)
+        {
+            ll_add(cloneArray,ll_get(this,from));
+        }
+    }
 
     return cloneArray;
 }
@@ -566,6 +617,11 @@ LinkedList* ll_clone(LinkedList* this)
 {
     LinkedList* cloneArray = NULL;
 
+    if(this != NULL)
+    {
+        cloneArray = ll_subList(this,0,ll_len(this));
+    }
+
     return cloneArray;
 }
 
@@ -580,8 +636,33 @@ LinkedList* ll_clone(LinkedList* this)
 int ll_sort(LinkedList* this, int (*pFunc)(void*,void*), int order)
 {
     int returnAux =-1;
+    int flag;
+    void* auxiliar;
+    void* auxiliar2;
+    if(this != NULL && pFunc != NULL && (order == 0 || order == 1))
+    {
+        do
+        {
+            flag = 0;
+            for(int i=0; i<ll_len(this)-1; i++)
+            {
+                auxiliar = ll_get(this,i);
+                auxiliar2 = ll_get(this,i+1);
 
+                if((pFunc(auxiliar,auxiliar2)>0 && order)||
+                        (pFunc(auxiliar,auxiliar2)<0 && !order))
+                {
+
+                    ll_set(this,i,auxiliar2);
+                    ll_set(this,i+1,auxiliar);
+                    flag = 1;
+
+                }
+            }
+        }
+        while(flag);
+        returnAux = 0;
+    }
     return returnAux;
-
 }
 
