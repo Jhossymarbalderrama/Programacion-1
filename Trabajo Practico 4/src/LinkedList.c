@@ -83,6 +83,7 @@ static Node* getNode(LinkedList* this, int nodeIndex)
     }
 
     return actual;
+
 }
 
 /** \brief  Permite realizar el test de la funcion getNode la cual es privada
@@ -207,7 +208,33 @@ int ll_add(LinkedList* this, void* pElement)
  */
 void* ll_get(LinkedList* this, int index)
 {
+        void* returnAux = NULL;
+    Node* aux=NULL;
+    aux=(Node*)malloc(sizeof(Node));
+    if(aux!=NULL)
+    {
+        aux->pElement=NULL;
+        aux->pNextNode=NULL;
+    }
+    if(this!=NULL && index>=0 && index < ll_len(this))
+    {
+        if(index==0)
+        {
+            aux=getNode(this,index);
+            returnAux=aux->pElement;
+        }
+        else if(index>0 && index< ll_len(this))
+        {
+           aux=getNode(this,index);
+           returnAux=aux->pElement;
+        }
 
+
+    }
+    return returnAux;
+
+
+    /**
     void* returnAux = NULL;
     Node* aux = NULL;
 
@@ -217,6 +244,8 @@ void* ll_get(LinkedList* this, int index)
         returnAux = aux->pElement;
     }
     return returnAux;
+
+    */
 }
 
 
@@ -243,7 +272,7 @@ int ll_set(LinkedList* this, int index,void* pElement)
     }
 
     return returnAux;
-    /*
+    /**
     int returnAux = -1;
 
     if(this != NULL && index >= 0 && index < ll_len(this))
@@ -375,6 +404,33 @@ int ll_deleteLinkedList(LinkedList* this)
 int ll_indexOf(LinkedList* this, void* pElement)
 {
     int returnAux = -1;
+    Node* aux=NULL;
+    Node* contenedor=NULL;
+    aux=(Node*)malloc(sizeof(Node));
+    if(aux!=NULL)
+    {
+        aux->pElement=pElement;
+        aux->pNextNode=NULL;
+    }
+    if(this!=NULL)
+    {
+        for(int i=0; i<ll_len(this); i++)
+        {
+            contenedor=getNode(this,i);
+            if(aux->pElement==contenedor->pElement)
+            {
+                returnAux=i;
+                break;
+            }
+        }
+
+    }
+    free(aux);
+    return returnAux;
+
+
+    /** MIO
+    int returnAux = -1;
 
     if(this != NULL)
     {
@@ -389,6 +445,7 @@ int ll_indexOf(LinkedList* this, void* pElement)
     }
 
     return returnAux;
+    */
 }
 
 /** \brief Indica si la lista esta o no vacia
@@ -490,6 +547,25 @@ void* ll_pop(LinkedList* this,int index)
 */
 int ll_contains(LinkedList* this, void* pElement)
 {
+
+    int returnAux = -1;
+
+    if(this!=NULL)
+    {
+        if(ll_indexOf(this,pElement)!=-1)
+        {
+            returnAux=1;
+        }
+        else
+        {
+            returnAux=0;
+        }
+
+    }
+    return returnAux;
+
+
+    /**
     int returnAux = -1;
     Node* aux = NULL;
     int flag = 1;
@@ -513,6 +589,8 @@ int ll_contains(LinkedList* this, void* pElement)
     }
 
     return returnAux;
+*/
+
 }
 
 /** \brief  Determina si todos los elementos de la lista (this2)
@@ -526,6 +604,40 @@ int ll_contains(LinkedList* this, void* pElement)
 */
 int ll_containsAll(LinkedList* this,LinkedList* this2)
 {
+    int returnAux = -1;
+    int flag=0;
+
+    if(this != NULL && this2 != NULL)
+    {
+        for(int i = 0; i < ll_len(this); i++)
+        {
+            flag = 0;
+            if(ll_contains(this2,ll_get(this,i)))
+            {
+                flag=1;
+            }
+            if(flag==0)
+            {
+                break;
+            }
+
+        }
+        if(flag==1)
+        {
+            returnAux=1;
+        }
+        else
+        {
+            returnAux=0;
+        }
+
+
+    }
+    return returnAux;
+
+
+
+    /**< A lo Nahu
     int returnAux = -1;
     Node* pAuxNode;
     if(this != NULL && this2 != NULL)
@@ -544,38 +656,39 @@ int ll_containsAll(LinkedList* this,LinkedList* this2)
     }
 
     return returnAux;
+    */
 
-/**<
-    int returnAux = -1;
+    /**< Mio
+        int returnAux = -1;
 
 
-    if(this != NULL && this2 != NULL)
-    {
-        int flag = 0;
-        for(int i = 0; i<= ll_len(this); i++)
+        if(this != NULL && this2 != NULL)
         {
-            int esta ;
-            esta = ll_contains(this2,ll_get(this,i));
-
-            if( esta== 0)
+            int flag = 0;
+            for(int i = 0; i<= ll_len(this); i++)
             {
-                return 0;
+                int esta ;
+                esta = ll_contains(this2,ll_get(this,i));
+
+                if( esta== 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    flag = 1;
+                }
             }
-            else
+            if(flag == 1)
             {
-                flag = 1;
+
+                returnAux = 1;
+
             }
-        }
-        if(flag == 1)
-        {
-
-            returnAux = 1;
 
         }
-
-    }
-    return returnAux;
- */
+        return returnAux;
+     */
 }
 
 
