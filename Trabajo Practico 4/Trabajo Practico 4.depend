@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1574344854 source:c:\users\balde\desktop\trabajo practico 4\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1574347796 c:\users\balde\desktop\trabajo practico 4\linkedlist.h
+
