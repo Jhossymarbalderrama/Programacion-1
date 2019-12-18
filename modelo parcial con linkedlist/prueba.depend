@@ -63,3 +63,39 @@
 	<string.h>
 	"LinkedList.h"
 
+1576529145 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\modelo parcial con linkedlist\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"controller.h"
+	"Dominio.h"
+
+1576530085 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\modelo parcial con linkedlist\linkedlist.h
+
+1576529145 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\modelo parcial con linkedlist\controller.h
+
+1576529145 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\modelo parcial con linkedlist\dominio.h
+
+1576529145 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\modelo parcial con linkedlist\dominio.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Dominio.h"
+
+1576529145 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\modelo parcial con linkedlist\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"Controller.h"
+	"Dominio.h"
+
+1576530077 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\modelo parcial con linkedlist\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+

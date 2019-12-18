@@ -1,0 +1,8 @@
+
+    srand (time(NULL));
+    int aleatorio;
+   
+    aleatorio = rand()%(71)+50;
+     
+  
+

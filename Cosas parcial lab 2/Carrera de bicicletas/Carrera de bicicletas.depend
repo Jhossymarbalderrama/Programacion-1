@@ -1,0 +1,91 @@
+# depslib dependency file v1.0
+1576065038 source:c:\users\alumno\desktop\carrera de bicicletas\menu.c
+	<stdio.h>
+	<stdlib.h>
+
+1576070619 source:c:\users\alumno\desktop\carrera de bicicletas\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1576070409 c:\users\alumno\desktop\carrera de bicicletas\linkedlist.h
+
+1576071102 source:c:\users\alumno\desktop\carrera de bicicletas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"menu.h"
+	"controller.h"
+	"bicicleta.h"
+	<time.h>
+
+1575992209 c:\users\alumno\desktop\carrera de bicicletas\menu.h
+
+1576071612 c:\users\alumno\desktop\carrera de bicicletas\controller.h
+
+1576070029 c:\users\alumno\desktop\carrera de bicicletas\bicicleta.h
+	"LinkedList.h"
+
+1576070012 source:c:\users\alumno\desktop\carrera de bicicletas\bicicleta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"bicicleta.h"
+	"LinkedList.h"
+	"controller.h"
+
+1576071030 source:c:\users\alumno\desktop\carrera de bicicletas\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"bicicleta.h"
+	"controller.h"
+
+1576621092 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\bicicleta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"bicicleta.h"
+	"LinkedList.h"
+	"controller.h"
+
+1576070029 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\bicicleta.h
+	"LinkedList.h"
+
+1576606504 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\linkedlist.h
+
+1576625396 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\controller.h
+
+1576625403 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"menu.h"
+	"controller.h"
+	"bicicleta.h"
+	<time.h>
+
+1575992209 e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\menu.h
+
+1576065038 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\menu.c
+	<stdio.h>
+	<stdlib.h>
+
+1576623717 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+
+1576625907 source:e:\facultad\curso - materias\laboratorio 1 y programacion 1\programacion-1\carrera de bicicletas\controller.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"bicicleta.h"
+	"controller.h"
+
